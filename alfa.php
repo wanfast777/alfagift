@@ -98,7 +98,7 @@ $random_name = "Epan"." ".substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGH
 $random_email = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 7);
 $random_name = "\"$random_name\"";
 $random_email = "\"$random_email@gmail.com\"";
-$data_create = '{"address":"","birthDate":"1991-10-11","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"akun1212","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
+$data_create = '{"address":"","birthDate":"1991-10-11","debug":false,"deviceId":'.$deviceid2.',"email":'.$random_email.',"firstName":"","fullName":'.$random_name.',"gender":"F","lastName":"","latitude":0,"longitude":0,"maritalStatus":"M","password":"Avna1234","phone":'.$nomorhp.',"postCode":"","registerPonta":true,"token":'.$token2.'}';
 $create_akun = curl($url_daftar,$header_otp,$data_create);
 $put = file_put_contents('createakunalfa.txt',$create_akun);
 $create_akun = json_decode($create_akun,true);
@@ -115,7 +115,7 @@ if($status_create !== "00"){
     $id_ponta = $create_akun['member']['ponta']['accountCard'];
     $no_hp = $create_akun['member']['ponta']['phoneNumber'];
     echo "| Sukses daftar!!! \n";
-    echo "| Nomer hp $no_hp dan password Semangat45 \n";
+    echo "| Nomer hp $no_hp dan password Avna1234 \n";
     echo "| Member Ponta $id_ponta \n";
     echo "| Loading voucher \n";
     sleep(4);
