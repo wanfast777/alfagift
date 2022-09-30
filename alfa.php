@@ -25,8 +25,8 @@ $deviceid2 = "\"$deviceid\"";
 echo "\n";
 echo "\n";
 echo "| Welcome to ALFAGIFT ACCOUNT GENERATOR!! \n";
-echo "| Simpel script by Arie \n";
-echo "| Wa 083847948999 \n";
+echo "| Simpel script \n";
+echo "|  083847948999 \n";
 echo "| --------------------------- \n";
 if(file_exists("config.json")){
     $arr2 = json_decode(file_get_contents('config.json'), true);
